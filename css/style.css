@@ -1,14 +1,17 @@
 body {
-    background-color: #172330;
     font-family: "Lato", sans-serif;
     color: white;
     text-align: center;
     width: 95%;
     margin: auto;
-    background-image: url('/images/atomist-starry-night.jpg');
+
+    background: url('/images/atomist-starry-night.jpg'), #1B2937 300px;
+    background-color: #172330;
+    /* I will try experiment with this later, to get the background image-colour combo */
+    /* linear-gradient(transparent, #1B2937, #172330 ) */
     background-repeat: no-repeat;
-    background-size: contain;
 }
+
 nav {
     background-color: none;
     font-weight: 800;
@@ -21,6 +24,7 @@ nav li {
     margin-top: 5%;
 }
 
+/* I had to match the specificity of the bootstrap CSS to be able to change some styles */
 .nav > li > a {
     color: white;
     transition: color 0.4s;
@@ -57,9 +61,40 @@ nav li {
     height: 55px;
 }
 
+#title {
+    margin: 10%;
+    margin-bottom: 7%;
+}
+
+#title h1 {
+    font-size: 450%;
+    font-weight: 500;
+}
+
+/* Added custom styling to the bootstrap button to more closely match the original */
+.get-started-btn {
+    background-color: #5BC399;
+    border-color: #5BC399;
+    padding: 18px;
+    width: 190px;
+    height: 65px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.get-started-btn:hover {
+    background-color: #5BC399;
+    border-color: #5BC399;
+}
+
+#title button {
+    margin: 5%;
+}
+
+
 /* Just adding some margins so that its not stuck to the edges. Can be removed if needed */
 #desc {
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -103,26 +138,8 @@ Changed the colour to the green that matches the original and then wrapped all t
     color: #AAAEBD;
 }
 
-/* Added custom styling to the bootstrap button to more closely match the original */
-.get-started-btn {
-    background-color: #5BC399;
-    border-color: #5BC399;
-    padding: 18px;
-    width: 200px;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-.get-started-btn:hover {
-    background-color: #5BC399;
-    border-color: #5BC399;
-}
-
 /* For responsive design (devices with screens smaller than 768 pixels) */
 @media screen and (max-width: 768px) {
 
-    /* Button moves to the left on smaller devices */
-    .btn {
-        float: left;
-    }
+
 }
