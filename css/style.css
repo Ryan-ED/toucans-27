@@ -5,6 +5,56 @@ body {
     text-align: center;
     width: 95%;
     margin: auto;
+    background-image: url('/images/atomist-starry-night.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav {
+    background-color: none;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+nav li {
+    margin-top: 5%;
+}
+
+.nav > li > a {
+    color: white;
+    transition: color 0.4s;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+    color: #5bc399;
+  }
+
+#nav-btn {
+      height: 40px;
+      width: 139px;
+      font-weight: 800;
+      background-color: transparent;
+      border: 2px solid #5bc399;
+      color: #5BC399;
+      margin-top: 10%;
+      letter-spacing: 1.5px;
+      font-size: 12px;
+  }
+
+  #nav-btn:hover {
+    background-color: #5BC399;
+    color: white;
+  }
+
+#sign-in {
+    margin-top: 5%;
+    font-weight: 400;
+}
+
+.navbar-brand img {
+    height: 55px;
 }
 
 /* Just adding some margins so that its not stuck to the edges. Can be removed if needed */
@@ -54,7 +104,7 @@ Changed the colour to the green that matches the original and then wrapped all t
 }
 
 /* Added custom styling to the bootstrap button to more closely match the original */
-.btn {
+.get-started-btn {
     background-color: #5BC399;
     border-color: #5BC399;
     padding: 18px;
@@ -63,7 +113,7 @@ Changed the colour to the green that matches the original and then wrapped all t
     letter-spacing: 2px;
 }
 
-.btn:hover {
+.get-started-btn:hover {
     background-color: #5BC399;
     border-color: #5BC399;
 }
